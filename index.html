@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>    
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please take this short 1-min survey!</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name: </label>
+        <input id="name" type="text" required placeholder="Donald Trump">
+
+        <label for="email" id="email-label">Email: </label>
+        <input id="email" type="email" required placeholder="47th@potus.com">
+
+        <label for="number" id="number-label">Age: </label>
+        <input id="number" type="number" min="0" max="99" required placeholder="78">
+        <hr>
+        <label for="dropdown">Where would you rather eat at?</label>
+        <select id="dropdown">
+          <option>McDonald's</option>
+          <option>Wendy's</option>
+          <option>Popeyes</option>
+          <option>Chipotle</option>
+          <option>Domino's</option>
+          <option>Chick-fil-A</option>
+        </select>
+        <hr>
+        <label for="radio">Choose one:</label>
+        <input type="radio" name="radio-group" id="blue" value="1">
+        <label for="red">Red</label>
+        <input type="radio" name="radio-group" id="blue" value="2">
+        <label for="red">Blue</label>
+        <hr>
+        <label for="checkbox">Select all that apply:</label>
+        <input type="checkbox" value="1" id="">
+        <label for="">I am superstitious</label>
+        <input type="checkbox" value="1" id="">
+        <label for="">I am witty</label>
+        <input type="checkbox" value="1" id="">
+        <label for="">I am confident</label>
+        <input type="checkbox" value="1" id="">
+        <label for="">I am creative</label>
+        <input type="checkbox" value="1" id="">
+        <label for="">I am open to different things</label>
+        <hr>
+        <textarea>Enter additional comments here!</textarea>
+
+        <input id="submit" type ="submit">
+      </form>
+    </main>
+  </body>
+</html>
