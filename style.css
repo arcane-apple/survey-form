@@ -1,32 +1,62 @@
-h1{
+h1 {
   text-align: center;
   font-family: Arial, sans-serif;
-  color:white;
+  color: white;
   margin: 0;
 }
 
-body{
+body {
   background-image: url(https://platform.vox.com/wp-content/uploads/sites/2/2024/07/AP24195803307155.jpg?quality=90&strip=all&crop=0,0,100,100);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  color:white;
+  background-attachment: fixed;
+  color: white;
   font-family: sans-serif;
 }
-  
+
 form {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 50px auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-label, input, select{
-    display: inline-block;
-    width: 99%;
-    margin-bottom: 10px;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
+input, select, textarea {
+  display: block;
+  width: calc(100% - 20px); / Add padding offset */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
