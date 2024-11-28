@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
   <head>
     <title>Survey Form</title>
     <meta charset="UTF-8">
@@ -12,47 +12,69 @@
       <p id="description">Please take this short 1-min survey!</p>
     </header>
     <main>
-      <form id="survey-form">
-        <label for="name" id="name-label">Name: </label>
-        <input id="name" type="text" required placeholder="Donald Trump">
-
-        <label for="email" id="email-label">Email: </label>
-        <input id="email" type="email" required placeholder="47th@potus.com">
-
-        <label for="number" id="number-label">Age: </label>
-        <input id="number" type="number" min="0" max="99" required placeholder="78">
+      <form action="" id="survey-form">
+        <div class="form-div">
+          <label for="name" id="name-label">Name </label>
+          <input name="name" id="name" type="text" required placeholder="Donald Trump">
+        </div>
+        <div class="form-div">
+          <label for="email" id="email-label">Email </label>
+          <input name="email" id="email" type="email" required placeholder="47th@potus.com">
+        </div>
+        <div class="form-div">
+          <label for="number" id="number-label">Age </label>
+          <input name="age" id="number" type="number" min="0" max="99" required placeholder="78">
+        </div>
         <hr>
-        <label for="dropdown">Where would you rather eat at?</label>
-        <select id="dropdown">
-          <option>McDonald's</option>
-          <option>Wendy's</option>
-          <option>Popeyes</option>
-          <option>Chipotle</option>
-          <option>Domino's</option>
-          <option>Chick-fil-A</option>
-        </select>
+        <div class="form-div">
+          <label id="dropdown-label" for="dropdown">Where would you rather eat at?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="">McDonald's</option>
+            <option value="1">Wendy's</option>
+            <option value="2">Popeyes</option>
+            <option value="3">Chipotle</option>
+            <option value="4">Domino's</option>
+            <option value="5">Chick-fil-A</option>
+         </select>
+        </div> 
         <hr>
-        <label for="radio">Choose one:</label>
-        <input type="radio" name="red" id="red" value="red">
-        <label for="red">Red</label>
-        <input type="radio" name="blue" id="blue" value="blue">
-        <label for="blue">Blue</label>
+        <div class= "form-div">
+          <label id="label-radio">Choose one:</label> 
+        </div> 
+        <div class="form-radio">
+          <label for="red"><input id="red" type="radio" name="color" value="red">Red</label>
+        </div>
+        <div class="form-radio">
+          <label for="blue"><input id="blue" type="radio" name="color" value="blue">Blue</label>
+        </div>
         <hr>
-        <label for="checkbox">Select all that apply:</label>
-        <input type="checkbox" value="1" id="">
-        <label for="">I am superstitious</label>
-        <input type="checkbox" value="1" id="">
-        <label for="">I am witty</label>
-        <input type="checkbox" value="1" id="">
-        <label for="">I am confident</label>
-        <input type="checkbox" value="1" id="">
-        <label for="">I am creative</label>
-        <input type="checkbox" value="1" id="">
-        <label for="">I am open to different things</label>
+        <div class="form-div">
+          <label id="label-checkbox">Select all that apply:</label>
+        </div>
+        <div class="div-checkbox">
+          <input type="checkbox" value="1" name="trait"><label>I am superstitious</label>
+        </div>
+        <div class="div-checkbox">
+          <input type="checkbox" value="2" name="trait"><label>I am witty</label>
+        </div>
+        <div class="div-checkbox">
+          <input type="checkbox" value="3" name="trait"><label>I am creative</label>
+        </div>
+        <div class="div-checkbox">
+          <input type="checkbox" value="4" name="trait"><label>I am meticulous</label>
+        </div>
+        <div class="div-checkbox">
+          <input type="checkbox" value="5" name="trait"><label>I am open to try new things</label>
+        </div>
         <hr>
-        <textarea>Enter additional comments here!</textarea>
-
-        <input id="submit" type ="submit">
+        <br>
+        <div class="form-div">
+          <label id="label-textarea">Additional Thoughts</label> 
+          <textarea name="suggestions" placeholder="Enter comment here..."></textarea>
+        </div>
+        <div class="form-div btn">
+          <input id="submit" value="Submit" type ="submit">
+        </div>
       </form>
     </main>
   </body>
